@@ -1,0 +1,63 @@
+onApprove: function(data, actions) {
+    return actions.order.capture().then(function(details) {
+        alert('Transaction completed by ' + details.payer.name.given_name + '!');
+    });
+}
+
+//array data
+// let carlist = [
+// {id:1, brand:'honda', model:'civic', cat:'sedan', seats:5, cc: 1.8, transmission: 'auto', rental:'80'},
+// {id:2, brand:'toyota', model:'vios', cat:'sedan', seats:5, cc: 1.6, transmission: 'auto', rental:'60'},
+// {id:3, brand:'mercedes', model:'c200', cat:'lux', seats:5, cc: 2, transmission: 'auto', rental:'120'},
+// {id:4, brand:'bmw', model:'520i', cat:'lux', seats:5, cc: 2, transmission: 'auto', rental:'140'},
+// {id:5, brand:'mazada', model:'cx30', cat:'suv', seats:5, cc: 2, transmission: 'auto', rental:'100'},
+// {id:6, brand:'range rover', model:'evoque', cat:'suv', seats:5, cc: 3, transmission: 'auto', rental:'140'},
+// {id:7, brand:'toyota', model:'sienta', cat:'mpv', seats:7, cc: 2.5, transmission: 'auto', rental:'100'},
+// {id:8, brand:'toyota', model:'alphard', cat:'mpv', seats:7, cc: 2.4, transmission: 'auto', rental:'120'},
+// ]
+
+
+<nav class="navbar navbar-expand-lg fixed-top navbar-light bg-primary">
+    <div class="container-fluid justify-content-center justify-content-md-between">
+        <!-- logo -->
+        <a class="navbar-brand" href="/"><img src="https://uploads.turbologo.com/uploads/design/preview_image/57033750/watermark_preview_image20240702-7-13lyucm.png"
+         width="100" height="80" alt="logo"></a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/contact">Contact Us</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Cars & Rates
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/sedan">Sedan</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="/suv">SUV</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="luxury">Luxury Sedan</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="mpv">MPV/Minivan</a></li>
+          </ul>
+        </li>    
+        <li class="nav-item">
+            <a class="nav-link" href="/cart">Cart</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/booking">My Bookings</a>
+          </li>
+        </ul>
+        </div>
+        </div>
+        </nav>
+
+
+        <svg height="16" width="16"><use xlink:href="bi bi-cart"></use></svg>
