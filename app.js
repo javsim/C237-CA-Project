@@ -28,10 +28,10 @@ const connection = mysql.createConnection({
 // password: '',
 // database: 'carlist',
 // port: 3316
-host: 'alwaysdata.com',
-user: 'javiersim_created_for_alwaysdata.com',
-password: 'remotedatabase123456_created_for_alwaysdata.com',
-database: 'javiersim_c237cars_created_for_alwaysdata.com',
+host: 'mysql-javiersim.alwaysdata.net',
+user: 'javiersim',
+password: 'remotedatabase123456',
+database: 'javiersim_c237cars',
 });
 connection.connect((err)=>{
     if (err){
