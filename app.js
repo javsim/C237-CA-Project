@@ -23,11 +23,15 @@ const storage = multer.diskStorage({
 const upload = multer({storage:storage});
 //create mysql connection
 const connection = mysql.createConnection({
-host: 'localhost',
-user: 'root',
-password: '',
-database: 'carlist',
-port: 3316
+// host: 'localhost',
+// user: 'root',
+// password: '',
+// database: 'carlist',
+// port: 3316
+host: 'alwaysdata.com',
+user: 'javiersim_created_for_alwaysdata.com',
+password: 'remotedatabase123456_created_for_alwaysdata.com',
+database: 'javiersim_c237cars_created_for_alwaysdata.com',
 });
 connection.connect((err)=>{
     if (err){
